@@ -7,6 +7,7 @@ set(MODULE_INCLUDE_DIRECTORIES
   )
 
 set(MODULE_SRCS
+  ReadFiducials.cxx
   )
 
 set(MODULE_TARGET_LIBRARIES

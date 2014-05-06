@@ -1,4 +1,5 @@
 #include <itkTransform.h>
+#include <itkImage.h>
 #include <itkTransformFileReader.h>
 #include <itkImageFileWriter.h>
 #include <itkImageFileReader.h>
@@ -9,7 +10,6 @@
 #include <itkImageRegionConstIteratorWithIndex.h>
 #include <itkIterativeInverseDeformationFieldImageFilter.h>
 #include "TransformFiducialListCLP.h"
-#include "itkOrientedImage.h"
 #include "itkResampleImageFilter.h"
 #include "itkNearestNeighborInterpolateImageFunction.h"
 #include "itkVersorRigid3DTransform.h"
@@ -21,7 +21,7 @@
 #include <stdlib.h>
 
 const int Dimension = 3;
-typedef itk::OrientedImage<int, 3> ImageType;
+typedef itk::Image<int, 3> ImageType;
 typedef itk::TransformFileReader::Pointer TransformReaderPointer;
 typedef itk::ImageFileWriter<ImageType> WriterType;
 typedef itk::ImageFileReader<ImageType> ReaderType;
