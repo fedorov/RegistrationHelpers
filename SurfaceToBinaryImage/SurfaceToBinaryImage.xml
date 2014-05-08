@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Converters</category>
+  <title>SurfaceToBinaryImage</title>
+  <description><![CDATA[Use ITK filter to convert triangular surface to binary image]]></description>
+  <version>0.0.1</version>
+  <documentation-url>
+  </documentation-url>
+  <license>Slicer</license>
+  <contributor>Andrey Fedorov (BWH)</contributor>
+  <acknowledgements>
+  </acknowledgements>
+  <parameters>
+    <label>IO</label>
+    <description><![CDATA[Input/output parameters]]></description>
+    <geometry type="model">
+      <name>inputMeshName</name>
+      <label>Input surface mesh</label>
+      <channel>input</channel>
+      <index>0</index>
+      <description><![CDATA[Input surface mesh]]></description>
+    </geometry>
+    <image>
+      <name>inputImageName</name>
+      <label>Input image geometry</label>
+      <channel>input</channel>
+      <index>1</index>
+      <description><![CDATA[Input image volume]]></description>
+    </image>
+    <image>
+      <name>outputImageName</name>
+      <label>Output image</label>
+      <channel>output</channel>
+      <index>2</index>
+      <description><![CDATA[Output image volume]]></description>
+    </image>
+  </parameters>
+</executable>
