@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Filtering</category>
+  <title>LabelGaussianSmoothing</title>
+  <description><![CDATA[Smooth input label using gaussian filter.]]></description>
+  <version>0.0.1</version>
+  <documentation-url>
+  </documentation-url>
+  <license>Slicer</license>
+  <contributor>Andrey Fedorov (BWH)</contributor>
+  <acknowledgements>
+  </acknowledgements>
+  <parameters>
+    <label>IO</label>
+    <description><![CDATA[Input/output parameters]]></description>
+    <image>
+      <name>inputImageName</name>
+      <label>Input image geometry</label>
+      <channel>input</channel>
+      <index>0</index>
+      <description><![CDATA[Input image volume]]></description>
+    </image>
+    <image>
+      <name>outputImageName</name>
+      <label>Output image</label>
+      <channel>output</channel>
+      <index>1</index>
+      <description><![CDATA[Output image volume]]></description>
+    </image>
+  </parameters>
+</executable>
